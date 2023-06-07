@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//importacion de htmls
+
+//import de home
+@import "../scss/html/home.scss";
+
+//import de clothes
+@import "../scss/html/clothes";
+
+//import de sales
+@import "../scss/html/sales";
+
+//import de sizes 
+@import "../scss/html/sizes";
+
+//import de about us
+@import "../scss/html/aboutus";
+

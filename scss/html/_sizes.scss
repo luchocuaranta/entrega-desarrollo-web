@@ -1,0 +1,91 @@
+//estilos de sizes
+
+//imports 
+
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*estilos de sizes*/
+
+main{
+    .size-cero{
+        @extend %display;
+    }
+    .size-uno{
+        @extend %display;
+    }
+    .size{
+        @extend %size;
+    }
+    .size-dos{
+        .size-tres{
+            @include size;
+            margin-bottom: 1rem;
+            img{
+                @extend %img-dos;
+            }
+            .size-cinco{
+                table{
+                    font-family: 'Space Grotesk', sans-serif;
+                    font-size: small;
+                    border-collapse: separate;
+                    border-spacing: 0.5rem;
+                    border: 2px solid black;
+                    width: 50%;
+                    height: 20vh; 
+                    tr{
+                        td{
+                            border: 2px solid black;
+                            padding: 0.1rem;
+                            text-align: center; 
+                        }
+                    }
+                }    
+            }
+
+        }
+        
+    }
+}
+
+/*media queires para tablet size*/
+
+@media screen and (min-width:600px){
+    .main-size{
+        .size-dos{
+            .size-tres{
+                flex-direction: row;
+            }
+        }
+        .size-seis{
+            flex-direction: row;
+        }
+    }
+}
+
+
+/*media queires para escritorio size*/
+
+@media screen and (min-width:1024px){
+    .main-size{
+        .size-cero{
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            font-family: $tipografia-principal;
+            text-transform: uppercase;
+        }
+        .size-uno{
+            display: block;
+            max-width: 600px ;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            margin-top: 1rem;
+            font-family: $tipografia-principal;
+            
+        }
+    }
+    
+}

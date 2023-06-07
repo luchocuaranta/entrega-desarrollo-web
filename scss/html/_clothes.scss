@@ -1,0 +1,97 @@
+/*styles de clothes*/
+
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+
+
+main{
+    .div-cero{
+        @extend %size;
+    }
+    .section{
+        display: grid;
+        height: 50%;
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        img{
+            align-self: center;
+            width: 100%;
+            height: 70vh;
+            object-fit: cover;
+            padding: 1rem;
+        }
+    }
+    .section-dos{
+        display: grid;
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        img{
+            align-self: center;
+            @extend %img-uno;
+        }
+    }
+    .div-seis{
+        @extend %display;
+    }
+    .div-siete{
+        @extend %display;
+    }
+    .div-uno{
+        @extend %display;
+    }
+    .div-dos{
+        @extend %display;
+    }
+    .section-tres{
+        @extend %section;
+        img{
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+            padding: 1rem;
+        } 
+    }
+}
+
+/*media queries clothes tablet*/
+
+@media screen and (min-width:600px){
+    .cloth-dos{
+        .section{
+            .div-uno{
+                display: block;
+            } 
+            grid-template-columns: repeat(2, 1fr);    
+        }
+        .section-dos{
+            grid-template-columns: repeat(2, 1fr);
+            .div-seis{
+                display: block;
+            }
+            
+        }
+    }
+}
+
+/*media queries para escritorio clothes */
+
+@media screen and (min-width:1024px){
+    .cloth-dos{
+        .section{
+            grid-template-columns: repeat(3, 1fr);
+            .div-dos{
+                display: block;
+            }
+        }
+        .section-dos{
+            grid-template-columns: repeat(3, 1fr);
+            .div-siete{
+                display: block;
+            }
+        }
+    }
+}
+
+

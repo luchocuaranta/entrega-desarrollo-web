@@ -1,0 +1,72 @@
+//styles de sales
+
+//imports
+
+@import "../utilidades/extend";
+@import "../utilidades/mixin";
+@import "../utilidades/variables";
+
+/*estilos de sales*/
+
+.main-sales{
+    .sales{
+        @extend %size;
+    }
+    p{
+        text-align: center;
+        margin: 1rem;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: small; 
+    }
+    .sales-uno{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        div{
+            img{
+                @extend %sales;
+            }
+        }
+    }
+    .coming{
+        @extend %size;
+    }
+    
+    div{
+        .img-cuatro{
+            @extend %sales;
+        }
+        .ultimo-sales{
+            @extend %display;
+        }
+    }
+}
+
+/*media queires para tablet sales*/
+
+@media screen and (min-width:600px){
+    .main-sales{
+        .sales-uno{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        
+    }
+}
+
+/*media queires para escritorio sales*/
+
+@media screen and (min-width:1024px){
+    .main-sales{
+        .mercol{
+            
+            .ultimo-sales{
+                display: block;
+                width: 100%;
+                height: 80vh;
+                object-fit: cover;
+                padding: 0.5rem;
+            }
+        }
+    }
+    
+}

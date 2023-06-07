@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  position: sticky; }
+  header img {
+    width: 8rem; }
+  header div nav div div ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem; }
+    header div nav div div ul li a {
+      text-decoration: none;
+      text-transform: none;
+      color: black;
+      text-transform: uppercase; }
+
+/*estilos home*/
+.main-clothe div img {
+  width: 100%;
+  height: 100%; }
+
+.main-clothe div iframe {
+  width: 100%;
+  height: 20rem;
+  margin-top: 1rem; }
+
+.main-clothe .primer-h2 {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase; }
+
+/*estilos footer*/
+footer .atributo {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column-reverse; }
+
+footer .tributo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  color: black;
+  gap: 1rem; }
+  footer .tributo h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: small; }
+
+footer div .pie-tres {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  align-items: start;
+  padding: 1rem;
+  gap: 6rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: small;
+  margin-left: 1rem; }
+  footer div .pie-tres a {
+    text-decoration: none;
+    text-transform: none;
+    color: black; }
+
+footer .pie-dos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; }
+  footer .pie-dos a img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: 4.5rem; }
+
+footer .ico-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 35px; }
+  footer .ico-fixed img {
+    width: 30px;
+    height: 30px; }
+
+/*styles de clothes*/
+main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase; }
+
+main .section-tres {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50%; }
+
+main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
+  display: none; }
+
+main .section-dos img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  padding: 1rem; }
+
+main .size-dos .size-tres img {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover; }
+
+.main-sales .sales-uno div img, .main-sales div .img-cuatro {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  padding: 0.5rem; }
+
+.main-about-us .aboutus .sobre-nosotros iframe {
+  height: 20vh;
+  width: 20vh; }
+
+main .section {
+  display: grid;
+  height: 50%;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover; }
+  main .section img {
+    align-self: center;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    padding: 1rem; }
+
+main .section-dos {
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover; }
+  main .section-dos img {
+    align-self: center; }
+
+main .section-tres img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  padding: 1rem; }
+
+/*media queries clothes tablet*/
+@media screen and (min-width: 600px) {
+  .cloth-dos .section {
+    grid-template-columns: repeat(2, 1fr); }
+    .cloth-dos .section .div-uno {
+      display: block; }
+  .cloth-dos .section-dos {
+    grid-template-columns: repeat(2, 1fr); }
+    .cloth-dos .section-dos .div-seis {
+      display: block; } }
+
+/*media queries para escritorio clothes */
+@media screen and (min-width: 1024px) {
+  .cloth-dos .section {
+    grid-template-columns: repeat(3, 1fr); }
+    .cloth-dos .section .div-dos {
+      display: block; }
+  .cloth-dos .section-dos {
+    grid-template-columns: repeat(3, 1fr); }
+    .cloth-dos .section-dos .div-siete {
+      display: block; } }
+
+main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase; }
+
+main .section-tres {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50%; }
+
+main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
+  display: none; }
+
+main .section-dos img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  padding: 1rem; }
+
+main .size-dos .size-tres img {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover; }
+
+.main-sales .sales-uno div img, .main-sales div .img-cuatro {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  padding: 0.5rem; }
+
+.main-about-us .aboutus .sobre-nosotros iframe {
+  height: 20vh;
+  width: 20vh; }
+
+/*estilos de sales*/
+.main-sales p {
+  text-align: center;
+  margin: 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: small; }
+
+.main-sales .sales-uno {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+
+/*media queires para tablet sales*/
+@media screen and (min-width: 600px) {
+  .main-sales .sales-uno {
+    grid-template-columns: repeat(3, 1fr); } }
+
+/*media queires para escritorio sales*/
+@media screen and (min-width: 1024px) {
+  .main-sales .mercol .ultimo-sales {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    padding: 0.5rem; } }
+
+main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase; }
+
+main .section-tres {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50%; }
+
+main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
+  display: none; }
+
+main .section-dos img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  padding: 1rem; }
+
+main .size-dos .size-tres img {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover; }
+
+.main-sales .sales-uno div img, .main-sales div .img-cuatro {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  padding: 0.5rem; }
+
+.main-about-us .aboutus .sobre-nosotros iframe {
+  height: 20vh;
+  width: 20vh; }
+
+/*estilos de sizes*/
+main .size-dos .size-tres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem; }
+  main .size-dos .size-tres .size-cinco table {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: small;
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+    border: 2px solid black;
+    width: 50%;
+    height: 20vh; }
+    main .size-dos .size-tres .size-cinco table tr td {
+      border: 2px solid black;
+      padding: 0.1rem;
+      text-align: center; }
+
+/*media queires para tablet size*/
+@media screen and (min-width: 600px) {
+  .main-size .size-dos .size-tres {
+    flex-direction: row; }
+  .main-size .size-seis {
+    flex-direction: row; } }
+
+/*media queires para escritorio size*/
+@media screen and (min-width: 1024px) {
+  .main-size .size-cero {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase; }
+  .main-size .size-uno {
+    display: block;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Space Grotesk", sans-serif; } }
+
+main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase; }
+
+main .section-tres {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50%; }
+
+main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
+  display: none; }
+
+main .section-dos img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  padding: 1rem; }
+
+main .size-dos .size-tres img {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover; }
+
+.main-sales .sales-uno div img, .main-sales div .img-cuatro {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  padding: 0.5rem; }
+
+.main-about-us .aboutus .sobre-nosotros iframe {
+  height: 20vh;
+  width: 20vh; }
+
+/*estilos de aboutus*/
+.main-about-us .aboutus {
+  height: 30vh;
+  background-image: url(../img/Home\header-08.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center; }
+  .main-about-us .aboutus .sobre-nosotros .grilla-uno {
+    margin-bottom: 0.5rem;
+    font-size: small; }
+
+.main-about-us div p {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Space Grotesk", sans-serif; }
+
+.main-about-us .ultimo .ultimo-cinco {
+  height: 50%;
+  overflow: hidden;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 1rem; }
+  .main-about-us .ultimo .ultimo-cinco img {
+    width: 100%;
+    height: 100%; }
+
+/*media queries about us tablet*/
+@media screen and (min-width: 600px) {
+  .main-about-us .ultimo-tres {
+    display: block; }
+  .main-about-us .aboutus .sobre-nosotros .grilla-uno {
+    text-align: center; }
+  .main-about-us .aboutus .sobre-nosotros .grilla-dos {
+    text-align: center; }
+  .main-about-us .ultimo .ultimo-cinco {
+    margin-right: 1rem;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(2, 50%);
+    column-gap: 1rem; }
+    .main-about-us .ultimo .ultimo-cinco .img-uno {
+      display: none; }
+    .main-about-us .ultimo .ultimo-cinco .img-dos {
+      grid-row: span 2; }
+  .main-about-us .ultimo-tres {
+    text-align: center;
+    margin: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: uppercase; }
+    .main-about-us .ultimo-tres .iframe-dos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+      margin-top: 1rem; }
+      .main-about-us .ultimo-tres .iframe-dos iframe {
+        width: 100%;
+        height: 100%; }
+  .main-about-us div p {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto; } }
+
+/* estilos media queries para escritorio aboutus */
+@media screen and (min-width: 1024px) {
+  .main-about-us .ultimo .ultimo-cinco {
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .main-about-us .ultimo .ultimo-cinco .img-uno {
+      display: block; }
+    .main-about-us .ultimo .ultimo-cinco .img-dos {
+      grid-row: span 1; }
+    .main-about-us .ultimo .ultimo-cinco div img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover; }
+  .main-about-us div p {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto; } }
