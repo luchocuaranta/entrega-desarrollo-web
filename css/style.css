@@ -4,29 +4,34 @@
   box-sizing: border-box; }
 
 /*estilos header*/
-header {
+.container-fluid {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   font-family: "Space Grotesk", sans-serif;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
   position: sticky; }
-  header img {
+  .container-fluid .row-12 {
     width: 8rem; }
-  header div nav div div ul {
+  .container-fluid .row .navbar .col .collapse .navbar-nav {
     list-style: none;
     display: flex;
     gap: 0.75rem; }
-    header div nav div div ul li a {
+    .container-fluid .row .navbar .col .collapse .navbar-nav .nav-item .nav-link {
       text-decoration: none;
       text-transform: none;
       color: black;
       text-transform: uppercase; }
+    .container-fluid .row .navbar .col .collapse .navbar-nav .nav-item:hover {
+      background-color: #855235;
+      text-transform: white;
+      border-radius: 10px; }
+      .container-fluid .row .navbar .col .collapse .navbar-nav .nav-item:hover a {
+        color: white; }
 
 /*estilos home*/
 .main-clothe div img {
