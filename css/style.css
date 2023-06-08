@@ -99,6 +99,9 @@ footer .ico-fixed {
   footer .ico-fixed img {
     width: 30px;
     height: 30px; }
+  footer .ico-fixed img:hover {
+    width: 40px;
+    height: 40px; }
 
 /*styles de clothes*/
 main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
