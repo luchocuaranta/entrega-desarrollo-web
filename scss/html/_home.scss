@@ -18,7 +18,10 @@
     z-index: 3;
     position: sticky;
     .row-12{
-        width: 8rem;  
+        img{
+           width: 8rem; 
+        }
+          
     }
     .row{
         .navbar{
