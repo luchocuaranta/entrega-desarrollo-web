@@ -546,12 +546,15 @@ main .size-dos .size-tres {
 /*media queires para tablet size*/
 @media screen and (min-width: 600px) {
   .main-size .size-dos .size-tres {
+    justify-content: space-around;
     flex-direction: row; }
   .main-size .size-seis {
     flex-direction: row; } }
 
 /*media queires para escritorio size*/
 @media screen and (min-width: 1024px) {
+  .main-size .size-dos .size-tres {
+    justify-content: space-evenly; }
   .main-size .size-cero {
     display: block;
     text-align: center;
