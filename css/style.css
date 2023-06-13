@@ -134,19 +134,8 @@ main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
-main .section-tres {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 50%; }
-
 main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
   display: none; }
-
-main .section-dos img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  padding: 1rem; }
 
 main .size-dos .size-tres img {
   width: 50vh;
@@ -164,53 +153,302 @@ main .size-dos .size-tres img {
   width: 20vh; }
 
 main .section {
-  display: grid;
-  height: 50%;
+  display: flex;
   width: 100%;
-  height: 70vh;
-  object-fit: cover; }
-  main .section img {
-    align-self: center;
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-    padding: 1rem; }
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+  align-self: center; }
+  main .section .div-tres {
+    width: 290px;
+    height: 600px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #eeeeee;
+    object-fit: cover; }
+    main .section .div-tres img {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 75%;
+      padding: 1rem;
+      object-fit: cover; }
+    main .section .div-tres .card-tres {
+      padding: 1rem; }
+      main .section .div-tres .card-tres h2 {
+        margin-left: 10px;
+        font-size: 20px; }
+      main .section .div-tres .card-tres p {
+        font-size: 16px;
+        margin-left: 10px; }
+      main .section .div-tres .card-tres a {
+        font-family: "Space Grotesk", sans-serif;
+        margin: 10px;
+        border: 8px solid #333333;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: none;
+        color: #eeeeee;
+        background-color: #333333; }
+      main .section .div-tres .card-tres a:hover {
+        border: 8px solid #855235;
+        background-color: #855235;
+        color: white; }
 
 main .section-dos {
-  display: grid;
+  display: flex;
   width: 100%;
-  height: 70vh;
-  object-fit: cover; }
-  main .section-dos img {
-    align-self: center; }
-
-main .section-tres img {
-  width: 100%;
-  height: 50vh;
+  height: 100%;
   object-fit: cover;
-  padding: 1rem; }
+  justify-content: center;
+  align-self: center; }
+  main .section-dos .div-cinco {
+    width: 290px;
+    height: 600px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #eeeeee;
+    object-fit: cover; }
+    main .section-dos .div-cinco img {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 75%;
+      padding: 1rem;
+      object-fit: cover; }
+    main .section-dos .div-cinco .card-cinco {
+      padding: 1rem; }
+      main .section-dos .div-cinco .card-cinco h2 {
+        margin-left: 10px;
+        font-size: 20px; }
+      main .section-dos .div-cinco .card-cinco p {
+        font-size: 16px;
+        margin-left: 10px; }
+      main .section-dos .div-cinco .card-cinco a {
+        font-family: "Space Grotesk", sans-serif;
+        margin: 10px;
+        border: 8px solid #333333;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: none;
+        color: #eeeeee;
+        background-color: #333333; }
+      main .section-dos .div-cinco .card-cinco a:hover {
+        border: 8px solid #855235;
+        background-color: #855235;
+        color: white; }
+
+main .section-tres {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+  align-self: center; }
+  main .section-tres .div-ocho {
+    margin-bottom: 1rem;
+    margin: 1rem;
+    width: 290px;
+    height: 600px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #eeeeee;
+    object-fit: cover; }
+    main .section-tres .div-ocho img {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 75%;
+      padding: 1rem;
+      object-fit: cover; }
+    main .section-tres .div-ocho .card-ocho {
+      padding: 1rem; }
+      main .section-tres .div-ocho .card-ocho h2 {
+        margin-left: 10px;
+        font-size: 20px; }
+      main .section-tres .div-ocho .card-ocho p {
+        font-size: 16px;
+        margin-left: 10px; }
+      main .section-tres .div-ocho .card-ocho a {
+        font-family: "Space Grotesk", sans-serif;
+        margin: 10px;
+        border: 8px solid #333333;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: none;
+        color: #eeeeee;
+        background-color: #333333; }
+      main .section-tres .div-ocho .card-ocho a:hover {
+        border: 8px solid #855235;
+        background-color: #855235;
+        color: white; }
 
 /*media queries clothes tablet*/
 @media screen and (min-width: 600px) {
-  .cloth-dos .section {
-    grid-template-columns: repeat(2, 1fr); }
-    .cloth-dos .section .div-uno {
-      display: block; }
-  .cloth-dos .section-dos {
-    grid-template-columns: repeat(2, 1fr); }
-    .cloth-dos .section-dos .div-seis {
-      display: block; } }
+  main .section {
+    justify-content: space-around; }
+    main .section .div-uno {
+      display: block;
+      width: 290px;
+      height: 600px;
+      border: 1px solid #eeeeee;
+      border-radius: 5px;
+      padding: 2px;
+      background-color: #eeeeee;
+      object-fit: cover; }
+      main .section .div-uno img {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75%;
+        padding: 1rem;
+        object-fit: cover; }
+      main .section .div-uno .card-uno {
+        padding: 1rem; }
+        main .section .div-uno .card-uno h2 {
+          margin-left: 10px;
+          font-size: 20px; }
+        main .section .div-uno .card-uno p {
+          font-size: 16px;
+          margin-left: 10px; }
+        main .section .div-uno .card-uno a {
+          font-family: "Space Grotesk", sans-serif;
+          margin: 10px;
+          border: 8px solid #333333;
+          border-radius: 10px;
+          text-decoration: none;
+          text-transform: none;
+          color: #eeeeee;
+          background-color: #333333; }
+        main .section .div-uno .card-uno a:hover {
+          border: 8px solid #855235;
+          background-color: #855235;
+          color: white; }
+  main .section-dos {
+    justify-content: space-around; }
+    main .section-dos .div-seis {
+      display: block;
+      width: 290px;
+      height: 600px;
+      border: 1px solid #eeeeee;
+      border-radius: 5px;
+      padding: 2px;
+      background-color: #eeeeee;
+      object-fit: cover; }
+    main .section-dos img {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 75%;
+      padding: 1rem;
+      object-fit: cover; }
+    main .section-dos .card-seis {
+      padding: 1rem; }
+      main .section-dos .card-seis h2 {
+        margin-left: 10px;
+        font-size: 20px; }
+      main .section-dos .card-seis p {
+        font-size: 16px;
+        margin-left: 10px; }
+      main .section-dos .card-seis a {
+        font-family: "Space Grotesk", sans-serif;
+        margin: 10px;
+        border: 8px solid #333333;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: none;
+        color: #eeeeee;
+        background-color: #333333; }
+      main .section-dos .card-seis a:hover {
+        border: 8px solid #855235;
+        background-color: #855235;
+        color: white; }
+  main .section-tres .div-ocho {
+    margin: 2rem; } }
 
 /*media queries para escritorio clothes */
 @media screen and (min-width: 1024px) {
-  .cloth-dos .section {
-    grid-template-columns: repeat(3, 1fr); }
-    .cloth-dos .section .div-dos {
-      display: block; }
+  .cloth-dos .section .div-dos {
+    display: block;
+    width: 290px;
+    height: 600px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #eeeeee;
+    object-fit: cover; }
+    .cloth-dos .section .div-dos img {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 75%;
+      padding: 1rem;
+      object-fit: cover; }
+    .cloth-dos .section .div-dos .card-dos {
+      padding: 1rem; }
+      .cloth-dos .section .div-dos .card-dos h2 {
+        margin-left: 10px;
+        font-size: 20px; }
+      .cloth-dos .section .div-dos .card-dos p {
+        font-size: 16px;
+        margin-left: 10px; }
+      .cloth-dos .section .div-dos .card-dos a {
+        font-family: "Space Grotesk", sans-serif;
+        margin: 10px;
+        border: 8px solid #333333;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: none;
+        color: #eeeeee;
+        background-color: #333333; }
+      .cloth-dos .section .div-dos .card-dos a:hover {
+        border: 8px solid #855235;
+        background-color: #855235;
+        color: white; }
   .cloth-dos .section-dos {
-    grid-template-columns: repeat(3, 1fr); }
+    justify-content: space-around; }
     .cloth-dos .section-dos .div-siete {
-      display: block; } }
+      display: block;
+      width: 290px;
+      height: 600px;
+      border: 1px solid #eeeeee;
+      border-radius: 5px;
+      padding: 2px;
+      background-color: #eeeeee;
+      object-fit: cover; }
+      .cloth-dos .section-dos .div-siete img {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75%;
+        padding: 1rem;
+        object-fit: cover; }
+      .cloth-dos .section-dos .div-siete .card-siete {
+        padding: 1rem; }
+        .cloth-dos .section-dos .div-siete .card-siete h2 {
+          margin-left: 10px;
+          font-size: 20px; }
+        .cloth-dos .section-dos .div-siete .card-siete p {
+          font-size: 16px;
+          margin-left: 10px; }
+        .cloth-dos .section-dos .div-siete .card-siete a {
+          font-family: "Space Grotesk", sans-serif;
+          margin: 10px;
+          border: 8px solid #333333;
+          border-radius: 10px;
+          text-decoration: none;
+          text-transform: none;
+          color: #eeeeee;
+          background-color: #333333; }
+        .cloth-dos .section-dos .div-siete .card-siete a:hover {
+          border: 8px solid #855235;
+          background-color: #855235;
+          color: white; }
+  .cloth-dos .section-tres .div-ocho {
+    margin: 3rem; } }
 
 main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
   text-align: center;
@@ -218,19 +456,8 @@ main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
-main .section-tres {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 50%; }
-
 main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
   display: none; }
-
-main .section-dos img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  padding: 1rem; }
 
 main .size-dos .size-tres img {
   width: 50vh;
@@ -278,19 +505,8 @@ main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
-main .section-tres {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 50%; }
-
 main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
   display: none; }
-
-main .section-dos img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  padding: 1rem; }
 
 main .size-dos .size-tres img {
   width: 50vh;
@@ -357,19 +573,8 @@ main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
-main .section-tres {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 50%; }
-
 main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
   display: none; }
-
-main .section-dos img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  padding: 1rem; }
 
 main .size-dos .size-tres img {
   width: 50vh;

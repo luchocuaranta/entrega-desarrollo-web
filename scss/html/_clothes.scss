@@ -2,6 +2,7 @@
 
 @import "../utilidades/extend";
 @import "../utilidades/mixin";
+@import "../utilidades/variables";
 
 
 main{
@@ -9,28 +10,67 @@ main{
         @extend %size;
     }
     .section{
-        display: grid;
-        height: 50%;
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-        img{
-            align-self: center;
-            width: 100%;
-            height: 70vh;
-            object-fit: cover;
-            padding: 1rem;
+        @include clothes-sec; 
+        
+        .div-tres{
+            @include card-div;
+            img{
+                @include card-img;
+            }
+            .card-tres{
+                padding: 1rem;
+                h2{
+                    margin-left: 10px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+                a{
+                    @include card-a;
+                }
+                a:hover{
+                    border: 8px solid $color-nav;
+                    background-color: $color-nav;
+                    color:white ;
+                }
+            
+            }
+        
+        
+
         }
     }
     .section-dos{
-        display: grid;
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-        img{
-            align-self: center;
-            @extend %img-uno;
+        @include clothes-sec;
+        .div-cinco{
+            @include card-div;
+            img{
+                @include card-img;
+            }
+            .card-cinco{
+                padding: 1rem;
+                h2{
+                    margin-left: 10px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+                a{
+                    @include card-a;
+                }
+                a:hover{
+                    border: 8px solid $color-nav;
+                    background-color: $color-nav;
+                    color:white ;
+                }
+            
+            }
         }
+        
     }
     .div-seis{
         @extend %display;
@@ -45,30 +85,113 @@ main{
         @extend %display;
     }
     .section-tres{
-        @extend %section;
-        img{
-            width: 100%;
-            height: 50vh;
-            object-fit: cover;
-            padding: 1rem;
-        } 
+        @include clothes-sec;
+        
+        .div-ocho{
+            margin-bottom: 1rem;
+            margin: 1rem;
+            @include card-div;
+            img{
+                @include card-img;
+            }
+            .card-ocho{
+                padding: 1rem;
+                h2{
+                    margin-left: 10px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+                a{
+                    @include card-a;
+                }
+                a:hover{
+                    border: 8px solid $color-nav;
+                    background-color: $color-nav;
+                    color:white ;
+                }
+            }
+            
+
+        }
+        
     }
 }
+
 
 /*media queries clothes tablet*/
 
 @media screen and (min-width:600px){
-    .cloth-dos{
+    main{
         .section{
+            justify-content: space-around; 
             .div-uno{
                 display: block;
-            } 
-            grid-template-columns: repeat(2, 1fr);    
+                @include card-div;
+                img{
+                    @include card-img;
+                }
+                .card-uno{
+                    padding: 1rem;
+                    h2{
+                        margin-left: 10px;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-left: 10px;
+                    }
+                    a{
+                        @include card-a;
+                    }
+                    a:hover{
+                        border: 8px solid $color-nav;
+                        background-color: $color-nav;
+                        color:white ;
+                    }
+                }
+                
+    
+            }
+
+             
         }
         .section-dos{
-            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-around;
             .div-seis{
                 display: block;
+                @include card-div;
+            }
+            img{
+                @include card-img;
+            }
+            .card-seis{
+                padding: 1rem;
+                h2{
+                    margin-left: 10px;
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+                a{
+                    @include card-a;
+                }
+                a:hover{
+                    border: 8px solid $color-nav;
+                    background-color: $color-nav;
+                    color:white ;
+                }
+            }
+
+            
+        }
+        .section-tres{
+            .div-ocho{
+               margin: 2rem; 
             }
             
         }
@@ -80,16 +203,70 @@ main{
 @media screen and (min-width:1024px){
     .cloth-dos{
         .section{
-            grid-template-columns: repeat(3, 1fr);
+            
             .div-dos{
                 display: block;
+                @include card-div;
+                
+                img{
+                    @include card-img;
+                }
+                .card-dos{
+                    padding: 1rem;
+                    h2{
+                        margin-left: 10px;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-left: 10px;
+                    }
+                    a{
+                        @include card-a;
+                    }
+                    a:hover{
+                        border: 8px solid $color-nav;
+                        background-color: $color-nav;
+                        color:white ;
+                    }
+                }
             }
+            
         }
         .section-dos{
-            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-around;
             .div-siete{
                 display: block;
+                @include card-div;
+                img{
+                    @include card-img;
+                }
+                .card-siete{
+                    padding: 1rem;
+                    h2{
+                        margin-left: 10px;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-left: 10px;
+                    }
+                    a{
+                        @include card-a;
+                    }
+                    a:hover{
+                        border: 8px solid $color-nav;
+                        background-color: $color-nav;
+                        color:white ;
+                    }
+                }
             }
+        }
+        .section-tres{
+            .div-ocho{
+               margin: 3rem; 
+            }
+            
         }
     }
 }

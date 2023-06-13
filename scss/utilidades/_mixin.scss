@@ -17,3 +17,41 @@
     justify-items: center;
 }
 
+@mixin card-div{
+    width: 290px;
+    height: 600px;
+    border: 1px solid $color-card;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: $color-card;
+    object-fit: cover;
+}
+
+@mixin card-img{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+    padding: 1rem;
+    object-fit: cover;
+}
+
+@mixin card-a{
+    font-family: $tipografia-principal;
+    margin: 10px;
+    border: 8px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: none;
+    color: $color-card;
+    background-color: rgb(51, 51, 51);
+}
+
+@mixin clothes-sec{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-self: center;
+}
