@@ -32,7 +32,7 @@ header nav div .offcanvas .offcanvas-body .navbar-nav li {
   height: 20rem;
   margin-top: 1rem; }
 
-.main-clothe .primer-h2 {
+.main-clothe .primer-h1 {
   text-align: center;
   margin-top: 1rem;
   font-family: "Space Grotesk", sans-serif;
@@ -469,7 +469,7 @@ main .size-dos .size-tres img {
   text-align: center;
   margin: 1rem;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: small; }
+  font-size: medium; }
 
 .main-sales .sales-uno {
   display: grid;
