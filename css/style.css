@@ -4,34 +4,23 @@
   box-sizing: border-box; }
 
 /*estilos header*/
-.container-fluid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+header nav div section a img {
+  width: 10rem; }
+
+header nav div .offcanvas .offcanvas-header div p {
+  font-family: "Prompt", sans-serif;
+  text-transform: capitalize;
+  font-size: 30px; }
+
+header nav div .offcanvas .offcanvas-body .navbar-nav li {
   font-family: "Space Grotesk", sans-serif;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
-  position: sticky; }
-  .container-fluid .row-12 img {
-    width: 8rem; }
-  .container-fluid .row .navbar .col .collapse .navbar-nav {
-    list-style: none;
-    display: flex;
-    gap: 0.75rem; }
-    .container-fluid .row .navbar .col .collapse .navbar-nav .nav-item .nav-link {
-      text-decoration: none;
-      text-transform: none;
-      color: black;
-      text-transform: uppercase; }
-    .container-fluid .row .navbar .col .collapse .navbar-nav .nav-item:hover {
-      background-color: #855235;
-      text-transform: white;
-      border-radius: 10px; }
-      .container-fluid .row .navbar .col .collapse .navbar-nav .nav-item:hover a {
-        color: white; }
+  font-weight: bold;
+  font-size: 20px; }
+  header nav div .offcanvas .offcanvas-body .navbar-nav li a {
+    color: #292828; }
+  header nav div .offcanvas .offcanvas-body .navbar-nav li a:hover {
+    transition: 0.2s;
+    color: #5e5e5e; }
 
 /*estilos home*/
 .main-clothe div img {
@@ -110,7 +99,8 @@ footer .ico-fixed {
     height: 30px; }
   footer .ico-fixed img:hover {
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    transition: 0.5s; }
 
 /*media queires para tablet home*/
 @media screen and (min-width: 600px) {

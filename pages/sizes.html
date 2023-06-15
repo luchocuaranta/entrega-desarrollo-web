@@ -24,53 +24,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap" rel="stylesheet">
+
     <!-- link ruteo css -->
 
     <link rel="stylesheet" href="../css/style.css">
     <title>Sizes error</title>
 </head>
 <body>
-    <header class="container-fluid">
-        <a href="../index.html" class="row-12">
-            <img src="../img/Logo Error-12.png"  alt="logo de error"  >
-        </a>
-        
-        <!-- enlaces de navegacion de la pagina -->
-        <div class="row">
-            <nav class="navbar navbar-expand-lg" class="col">
-                <div class="col">
-                  
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header class="container">
+    
+        <!-- aqui va nuestro enlace de navegacion -->
+    
+        <nav class="navbar fixed-top " >
+            <div class="container-fluid">
+                <section class="logo">
+                    <a href="../index.html">
+                      <img src="../img/Logo Error-12.png" alt="">
+                    </a>  
+                </section>
+                <button class="navbar-toggler border-light" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse"  id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/cloth.html">Clothes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/sales.html" >Sales</a>
-
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/sizes.html">Sizes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/aboutus.html">About us</a>
-
-                      </li>
-                    </ul>
-                    
-                  </div>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <div>
+                            <p>Error Clothing ™</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/cloth.html">Clothes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/sales.html">Sales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/sizes.html">Sizes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../pages/aboutus.html">About us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
-        </div>
-         
-
-        
+            </div>
+        </nav>
     </header>
 
     <!--aqui va nuestro main-->
