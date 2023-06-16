@@ -19,10 +19,9 @@
 
 @mixin card-div{
     width: 290px;
-    height: 600px;
+    height: 550px;
     border: 1px solid $color-card;
     border-radius: 5px;
-    padding: 2px;
     background-color: $color-card;
     object-fit: cover;
 }

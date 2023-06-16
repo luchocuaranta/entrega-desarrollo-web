@@ -86,11 +86,10 @@ main{
     }
     .section-tres{
         @include clothes-sec;
-        
         .div-ocho{
-            margin-bottom: 1rem;
-            margin: 1rem;
             @include card-div;
+            justify-content: space-evenly;
+            margin-bottom: 1rem;
             img{
                 @include card-img;
             }
@@ -190,10 +189,7 @@ main{
             
         }
         .section-tres{
-            .div-ocho{
-               margin: 2rem; 
-            }
-            
+            justify-content: space-around; 
         }
     }
 }
@@ -262,12 +258,7 @@ main{
                 }
             }
         }
-        .section-tres{
-            .div-ocho{
-               margin: 3rem; 
-            }
-            
-        }
+        
     }
 }
 

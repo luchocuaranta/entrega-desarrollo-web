@@ -120,7 +120,7 @@ footer .ico-fixed {
 /*styles de clothes*/
 main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
   text-align: center;
-  margin-top: 1rem;
+  margin: 2rem;
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
@@ -151,10 +151,9 @@ main .section {
   align-self: center; }
   main .section .div-tres {
     width: 290px;
-    height: 600px;
+    height: 550px;
     border: 1px solid #eeeeee;
     border-radius: 5px;
-    padding: 2px;
     background-color: #eeeeee;
     object-fit: cover; }
     main .section .div-tres img {
@@ -195,10 +194,9 @@ main .section-dos {
   align-self: center; }
   main .section-dos .div-cinco {
     width: 290px;
-    height: 600px;
+    height: 550px;
     border: 1px solid #eeeeee;
     border-radius: 5px;
-    padding: 2px;
     background-color: #eeeeee;
     object-fit: cover; }
     main .section-dos .div-cinco img {
@@ -238,15 +236,14 @@ main .section-tres {
   justify-content: center;
   align-self: center; }
   main .section-tres .div-ocho {
-    margin-bottom: 1rem;
-    margin: 1rem;
     width: 290px;
-    height: 600px;
+    height: 550px;
     border: 1px solid #eeeeee;
     border-radius: 5px;
-    padding: 2px;
     background-color: #eeeeee;
-    object-fit: cover; }
+    object-fit: cover;
+    justify-content: space-evenly;
+    margin-bottom: 1rem; }
     main .section-tres .div-ocho img {
       justify-content: center;
       align-items: center;
@@ -283,10 +280,9 @@ main .section-tres {
     main .section .div-uno {
       display: block;
       width: 290px;
-      height: 600px;
+      height: 550px;
       border: 1px solid #eeeeee;
       border-radius: 5px;
-      padding: 2px;
       background-color: #eeeeee;
       object-fit: cover; }
       main .section .div-uno img {
@@ -322,10 +318,9 @@ main .section-tres {
     main .section-dos .div-seis {
       display: block;
       width: 290px;
-      height: 600px;
+      height: 550px;
       border: 1px solid #eeeeee;
       border-radius: 5px;
-      padding: 2px;
       background-color: #eeeeee;
       object-fit: cover; }
     main .section-dos img {
@@ -356,18 +351,17 @@ main .section-tres {
         border: 8px solid #855235;
         background-color: #855235;
         color: white; }
-  main .section-tres .div-ocho {
-    margin: 2rem; } }
+  main .section-tres {
+    justify-content: space-around; } }
 
 /*media queries para escritorio clothes */
 @media screen and (min-width: 1024px) {
   .cloth-dos .section .div-dos {
     display: block;
     width: 290px;
-    height: 600px;
+    height: 550px;
     border: 1px solid #eeeeee;
     border-radius: 5px;
-    padding: 2px;
     background-color: #eeeeee;
     object-fit: cover; }
     .cloth-dos .section .div-dos img {
@@ -403,10 +397,9 @@ main .section-tres {
     .cloth-dos .section-dos .div-siete {
       display: block;
       width: 290px;
-      height: 600px;
+      height: 550px;
       border: 1px solid #eeeeee;
       border-radius: 5px;
-      padding: 2px;
       background-color: #eeeeee;
       object-fit: cover; }
       .cloth-dos .section-dos .div-siete img {
@@ -436,13 +429,11 @@ main .section-tres {
         .cloth-dos .section-dos .div-siete .card-siete a:hover {
           border: 8px solid #855235;
           background-color: #855235;
-          color: white; }
-  .cloth-dos .section-tres .div-ocho {
-    margin: 3rem; } }
+          color: white; } }
 
 main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
   text-align: center;
-  margin-top: 1rem;
+  margin: 2rem;
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
@@ -491,7 +482,7 @@ main .size-dos .size-tres img {
 
 main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
   text-align: center;
-  margin-top: 1rem;
+  margin: 2rem;
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
@@ -562,7 +553,7 @@ main .size-dos .size-tres {
 
 main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about-us .aboutus .sobre-nosotros .grilla-uno, .main-about-us .sales {
   text-align: center;
-  margin-top: 1rem;
+  margin: 2rem;
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
