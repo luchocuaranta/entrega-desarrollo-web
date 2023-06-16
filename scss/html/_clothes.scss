@@ -74,6 +74,9 @@ main{
     }
     .section-dos{
         @include clothes-sec;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
         .div-cinco{
             @include card-div;
             img{
@@ -100,15 +103,38 @@ main{
             
             }
         }
-        
+        .div-siete{
+                display: block;
+                @include card-div;
+                img{
+                    @include card-img;
+                }
+                .card-siete{
+                    padding: 1rem;
+                    h2{
+                        margin-left: 10px;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin-left: 10px;
+                    }
+                    a{
+                        @include card-a;
+                    }
+                    a:hover{
+                        border: 8px solid $color-nav;
+                        background-color: $color-nav;
+                        color:white ;
+                    }
+                }
+            }
     }
     
     .div-seis{
         @extend %display;
     }
-    .div-siete{
-        @extend %display;
-    }
+    
     .div-uno{
         @extend %display;
     }
@@ -159,32 +185,8 @@ main{
         }
         .section-dos{
             justify-content: space-around;
-            .div-seis{
-                display: block;
-                @include card-div;
-            }
-            img{
-                @include card-img;
-            }
-            .card-seis{
-                padding: 1rem;
-                h2{
-                    margin-left: 10px;
-                    font-size: 20px;
-                }
-                p{
-                    font-size: 16px;
-                    margin-left: 10px;
-                }
-                a{
-                    @include card-a;
-                }
-                a:hover{
-                    border: 8px solid $color-nav;
-                    background-color: $color-nav;
-                    color:white ;
-                }
-            }
+            flex-direction: row;
+            
 
             
         }
@@ -232,30 +234,30 @@ main{
         }
         .section-dos{
             justify-content: space-around;
-            .div-siete{
+            .div-seis{
                 display: block;
                 @include card-div;
-                img{
-                    @include card-img;
+            }
+            img{
+                @include card-img;
+            }
+            .card-seis{
+                padding: 1rem;
+                h2{
+                    margin-left: 10px;
+                    font-size: 20px;
                 }
-                .card-siete{
-                    padding: 1rem;
-                    h2{
-                        margin-left: 10px;
-                        font-size: 20px;
-                    }
-                    p{
-                        font-size: 16px;
-                        margin-left: 10px;
-                    }
-                    a{
-                        @include card-a;
-                    }
-                    a:hover{
-                        border: 8px solid $color-nav;
-                        background-color: $color-nav;
-                        color:white ;
-                    }
+                p{
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+                a{
+                    @include card-a;
+                }
+                a:hover{
+                    border: 8px solid $color-nav;
+                    background-color: $color-nav;
+                    color:white ;
                 }
             }
         }
