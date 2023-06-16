@@ -58,7 +58,6 @@ footer .tributo {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-bottom: 1rem;
   color: black;
   gap: 1rem; }
   footer .tributo h3 {
@@ -81,14 +80,15 @@ footer div .pie-tres {
     color: black; }
 
 footer .pie-dos {
+  height: 0;
   display: flex;
   justify-content: center;
-  gap: 1rem; }
+  gap: 1rem;
+  background-color: tomato; }
   footer .pie-dos a img {
     width: 20px;
-    height: 20px;
     position: relative;
-    bottom: 4.5rem; }
+    bottom: 3.5rem; }
 
 footer .ico-fixed {
   position: fixed;
@@ -587,12 +587,13 @@ main .size-dos .size-tres img {
 /*estilos de aboutus*/
 .main-about-us .aboutus {
   height: 30vh;
-  background-image: url(../img/Home\header-08.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center; }
+  justify-items: center;
+  background-color: #eeeeee;
+  margin: 1rem; }
   .main-about-us .aboutus .sobre-nosotros .grilla-uno {
     margin-bottom: 0.5rem;
     font-size: small; }
