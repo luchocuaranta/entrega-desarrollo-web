@@ -124,7 +124,7 @@ main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
-main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
+main .div-seis, main .div-siete, main .div-uno, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
   display: none; }
 
 main .size-dos .size-tres img {
@@ -148,7 +148,45 @@ main .section {
   height: 100%;
   object-fit: cover;
   justify-content: center;
-  align-self: center; }
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem; }
+  main .section .div-dos {
+    width: 290px;
+    height: 550px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    object-fit: cover; }
+    main .section .div-dos img {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 75%;
+      padding: 1rem;
+      object-fit: cover; }
+    main .section .div-dos .card-dos {
+      padding: 1rem; }
+      main .section .div-dos .card-dos h2 {
+        margin-left: 10px;
+        font-size: 20px; }
+      main .section .div-dos .card-dos p {
+        font-size: 16px;
+        margin-left: 10px; }
+      main .section .div-dos .card-dos a {
+        font-family: "Space Grotesk", sans-serif;
+        margin: 10px;
+        border: 8px solid #333333;
+        border-radius: 10px;
+        text-decoration: none;
+        text-transform: none;
+        color: #eeeeee;
+        background-color: #333333; }
+      main .section .div-dos .card-dos a:hover {
+        border: 8px solid #855235;
+        background-color: #855235;
+        color: white; }
   main .section .div-tres {
     width: 290px;
     height: 550px;
@@ -276,43 +314,8 @@ main .section-tres {
 /*media queries clothes tablet*/
 @media screen and (min-width: 600px) {
   main .section {
+    flex-direction: row;
     justify-content: space-around; }
-    main .section .div-uno {
-      display: block;
-      width: 290px;
-      height: 550px;
-      border: 1px solid #eeeeee;
-      border-radius: 5px;
-      background-color: #eeeeee;
-      object-fit: cover; }
-      main .section .div-uno img {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 75%;
-        padding: 1rem;
-        object-fit: cover; }
-      main .section .div-uno .card-uno {
-        padding: 1rem; }
-        main .section .div-uno .card-uno h2 {
-          margin-left: 10px;
-          font-size: 20px; }
-        main .section .div-uno .card-uno p {
-          font-size: 16px;
-          margin-left: 10px; }
-        main .section .div-uno .card-uno a {
-          font-family: "Space Grotesk", sans-serif;
-          margin: 10px;
-          border: 8px solid #333333;
-          border-radius: 10px;
-          text-decoration: none;
-          text-transform: none;
-          color: #eeeeee;
-          background-color: #333333; }
-        main .section .div-uno .card-uno a:hover {
-          border: 8px solid #855235;
-          background-color: #855235;
-          color: white; }
   main .section-dos {
     justify-content: space-around; }
     main .section-dos .div-seis {
@@ -356,7 +359,7 @@ main .section-tres {
 
 /*media queries para escritorio clothes */
 @media screen and (min-width: 1024px) {
-  .cloth-dos .section .div-dos {
+  .cloth-dos .section .div-uno {
     display: block;
     width: 290px;
     height: 550px;
@@ -364,22 +367,22 @@ main .section-tres {
     border-radius: 5px;
     background-color: #eeeeee;
     object-fit: cover; }
-    .cloth-dos .section .div-dos img {
+    .cloth-dos .section .div-uno img {
       justify-content: center;
       align-items: center;
       width: 100%;
       height: 75%;
       padding: 1rem;
       object-fit: cover; }
-    .cloth-dos .section .div-dos .card-dos {
+    .cloth-dos .section .div-uno .card-uno {
       padding: 1rem; }
-      .cloth-dos .section .div-dos .card-dos h2 {
+      .cloth-dos .section .div-uno .card-uno h2 {
         margin-left: 10px;
         font-size: 20px; }
-      .cloth-dos .section .div-dos .card-dos p {
+      .cloth-dos .section .div-uno .card-uno p {
         font-size: 16px;
         margin-left: 10px; }
-      .cloth-dos .section .div-dos .card-dos a {
+      .cloth-dos .section .div-uno .card-uno a {
         font-family: "Space Grotesk", sans-serif;
         margin: 10px;
         border: 8px solid #333333;
@@ -388,7 +391,7 @@ main .section-tres {
         text-transform: none;
         color: #eeeeee;
         background-color: #333333; }
-      .cloth-dos .section .div-dos .card-dos a:hover {
+      .cloth-dos .section .div-uno .card-uno a:hover {
         border: 8px solid #855235;
         background-color: #855235;
         color: white; }
@@ -437,7 +440,7 @@ main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
-main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
+main .div-seis, main .div-siete, main .div-uno, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
   display: none; }
 
 main .size-dos .size-tres img {
@@ -486,7 +489,7 @@ main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
-main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
+main .div-seis, main .div-siete, main .div-uno, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
   display: none; }
 
 main .size-dos .size-tres img {
@@ -557,7 +560,7 @@ main .div-cero, .main-sales .sales, .main-sales .coming, main .size, .main-about
   font-family: "Space Grotesk", sans-serif;
   text-transform: uppercase; }
 
-main .div-seis, main .div-siete, main .div-uno, main .div-dos, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
+main .div-seis, main .div-siete, main .div-uno, .main-sales div .ultimo-sales, main .size-cero, main .size-uno, .main-about-us .ultimo-tres {
   display: none; }
 
 main .size-dos .size-tres img {
