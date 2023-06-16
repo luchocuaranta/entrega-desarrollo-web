@@ -52,17 +52,16 @@ footer .atributo {
   background-color: #e0e0e0;
   display: flex;
   flex-direction: column-reverse; }
-
-footer .tributo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  gap: 1rem; }
-  footer .tributo h3 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: small; }
+  footer .atributo .tributo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 1rem; }
+    footer .atributo .tributo h3 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: small; }
 
 footer div .pie-tres {
   display: flex;
