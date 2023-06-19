@@ -58,41 +58,36 @@ footer .atributo {
     align-items: center;
     justify-content: center;
     color: black;
-    gap: 1rem; }
+    margin-bottom: 0.5rem; }
     footer .atributo .tributo h3 {
       font-family: "Space Grotesk", sans-serif;
       font-size: small; }
-
-footer div .pie-tres {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-  align-items: start;
-  padding: 1rem;
-  gap: 6rem;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: small;
-  margin-left: 1rem; }
-  footer div .pie-tres a {
-    text-decoration: none;
-    text-transform: none;
-    color: black; }
-
-footer .pie-dos {
-  height: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  background-color: tomato; }
-  footer .pie-dos a img {
-    width: 20px;
-    position: relative;
-    bottom: 3.5rem; }
+  footer .atributo div .pie-tres {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    align-items: start;
+    padding: 1rem;
+    gap: 6rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: small;
+    margin-left: 1rem; }
+    footer .atributo div .pie-tres a {
+      text-decoration: none;
+      text-transform: none;
+      color: black; }
+  footer .atributo .pie-dos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem; }
+    footer .atributo .pie-dos a img {
+      width: 1.25rem; }
 
 footer .ico-fixed {
   position: fixed;
-  right: 20px;
-  bottom: 35px; }
+  right: 25px;
+  bottom: 25px; }
   footer .ico-fixed img {
     width: 30px;
     height: 30px; }

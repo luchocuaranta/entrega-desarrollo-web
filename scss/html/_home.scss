@@ -58,6 +58,7 @@ header{
 /*estilos home*/
 
 .main-clothe{
+    
     div{
       img{
         width: 100%;
@@ -72,10 +73,10 @@ header{
         }
     }
     .primer-h1{
-            text-align: center;
-            margin-top: 1rem;
-            font-family: $tipografia-principal;
-            text-transform: uppercase; 
+        text-align: center;
+        margin-top: 1rem;
+        font-family: $tipografia-principal;
+        text-transform: uppercase; 
     }
     .final-uno{
         display: grid;
@@ -92,7 +93,7 @@ header{
 /*estilos footer*/
 
 footer{
-   .atributo{
+    .atributo{
         background-color: rgb(224, 224, 224);
         display: flex;
         flex-direction: column-reverse;
@@ -102,52 +103,52 @@ footer{
             align-items: center;
             justify-content: center;
             color: black ;
-            gap: 1rem;
+            margin-bottom: 0.5rem;
 
             h3{
                 font-family: $tipografia-principal ;
                 font-size: small;   
             }
         }
-    } 
-   
-   div{
-    .pie-tres{
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        align-items: start;
-        padding: 1rem;
-        gap: 6rem;
-        font-family: $tipografia-principal ;
-        font-size: small;
-        margin-left: 1rem;
-        a{
-            text-decoration: none;
-            text-transform: none;
-            color: black;   
-        }
-    }
-   }
-   .pie-dos{
-        height: 0;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        background-color: tomato;
-        a{
+        div{
+            .pie-tres{
+                display: flex;
+                flex-direction: row;
+                margin-top: 1rem;
+                align-items: start;
+                padding: 1rem;
+                gap: 6rem;
+                font-family: $tipografia-principal ;
+                font-size: small;
+                margin-left: 1rem;
+                a{
+                    text-decoration: none;
+                    text-transform: none;
+                    color: black;   
+                }
+            }
         
-            img{
-                width: 20px;
-                position: relative;
-                bottom: 3.5rem;
+        }
+        .pie-dos{
+           display: flex;
+           justify-content: center;
+           gap: 1rem;
+           margin-bottom: 0.5rem;
+        
+            a{
+                img{
+                    width: 1.25rem;  
+                }
             }
         }
-    }
+    } 
+   
+    
+   
    .ico-fixed{
         position: fixed;
-        right: 20px;
-        bottom: 35px;
+        right: 25px;
+        bottom: 25px;
         img{
             width: 30px;
             height: 30px;
