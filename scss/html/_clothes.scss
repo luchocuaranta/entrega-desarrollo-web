@@ -11,9 +11,7 @@ main{
     }
     .section{
         @include clothes-sec; 
-        flex-direction: column;
-        align-items: center;
-        row-gap: 1rem;
+        @include ultimo;
         
         .div-dos{
             @include card-div;
@@ -74,9 +72,7 @@ main{
     }
     .section-dos{
         @include clothes-sec;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 1rem;
+        @include ultimo;
         .div-cinco{
             @include card-div;
             img{
@@ -141,6 +137,7 @@ main{
     
     .section-tres{
         @include clothes-sec;
+        @include ultimo;
         .div-ocho{
             @include card-div;
             justify-content: space-evenly;
@@ -180,18 +177,14 @@ main{
 @media screen and (min-width:600px){
     main{
         .section{
-            flex-direction: row;
-            justify-content: space-around;      
+            @include mq(space-around);     
         }
         .section-dos{
-            justify-content: space-around;
-            flex-direction: row;
-            
-
-            
+            @include mq(space-around);   
+               
         }
         .section-tres{
-            justify-content: space-around; 
+            @include mq(space-evenly)   
         }
     }
 }
